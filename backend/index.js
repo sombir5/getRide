@@ -3,11 +3,12 @@ const express = require("express");
 const cors = require("cors");
 const connectDB = require("./src/config/db");
 let PORT = process.env.PORT || 8080;
+
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.get("/", (req, res) => {
-    res.send("<h1>Enjoy the journey with our cars</h1>")
+    res.send(`<div><p>HI</p></div>`)
 })
 
 app.listen(PORT, async () => {
